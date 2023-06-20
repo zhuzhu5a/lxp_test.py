@@ -63,11 +63,11 @@ FIELDS = {
     "testSkip": 0
 }
 
-
+parent_directory_path =os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 class PATH:
     """ all file PATH meta """
-    config_tmp_path = SITE_PAKAGE_PATH + '/BeautifulReport/template/template'
-
+    # config_tmp_path = SITE_PAKAGE_PATH + '/BeautifulReport/template/template'
+    config_tmp_path = parent_directory_path+ '/template/template'
 
 class MakeResultJson:
     """ make html table tags """
